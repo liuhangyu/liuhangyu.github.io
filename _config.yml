@@ -1,10 +1,10 @@
 # Site settings
-title: BY Blog
+title: 
 SEOTitle: 甲壳虫的博客 | limited space for unlimited dream
 header-img: img/post-bg-desk.jpg
 email: liuhangyu86@gmail.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 甲壳虫的博客, liuhangyu, 甲壳虫, 存储, 操作系统, 网络，安全，区块链"
+keyword: "甲壳虫的博客, liuhangyu, 甲壳虫, 存储, 操作系统, 网络，安全，区块链"
 url: "http://liuhangyu.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/liuhangyu/liuhangyu.github.io.git" # you code repository
