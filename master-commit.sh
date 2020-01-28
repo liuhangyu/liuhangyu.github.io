@@ -10,14 +10,9 @@ function check() {
     fi
 }
 
-function check_whoami() {
-    brk=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' | grep "(\`whoami\`)"`
-    if [ ! $brk ]; then
-      #git checkout dev
-      git branch `whoami` 2>/dev/null
-      git checkout `whoami`
-      check "#git checkout `whoami`"
-    fi
+function check_master() {
+    git checkout master
+    check "#git checkout master"
 }
 
 function check_modifi() {
@@ -56,7 +51,7 @@ function check_delfile() {
     return 0
 }
 
-check_whoami
+check_master
 
 git add .
 check "#git add ."
@@ -83,7 +78,7 @@ fi
 git commit -m "update"
 check "#git commit"
 
-git push origin `whoami`
+git push origin master
 check "#git push"
 
 
